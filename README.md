@@ -17,6 +17,9 @@ Press 'x' to quit the game <br />
 ### How to play ?
 
 Download the folder, and type in the following commands in your terminal: -
-
-> g++ -o Snakey main.cpp <br />
+```
+g++ -o Snakey main.cpp <br />
+```
+```
 > ./Snakey
+```
