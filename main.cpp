@@ -61,6 +61,8 @@ void Draw() {
         cout << "#"; // map wall
     }
     cout << endl;
+    cout << "Score: " << score << endl;
+
 }
 
 void Input() {
@@ -75,19 +77,53 @@ void Input() {
                 dir = LEFT;
                 break;
             case 'd':
-                dir = UP;
+                dir = RIGHT;
                 break;
             case 'w':
-                dir = DOWN;
+                dir = UP;
                 break;
             case 's':
                 dir = DOWN;
+                break;
+            case 'x':
+                gameOver = true;
+                break;
         }
     }
 }
 
 void Logic() {
+    switch(dir) {
+        // As we go left, 'x' coordinates are decreased and so on and so forth 
+        // with other keys
 
+        case LEFT:
+            x--;
+            break;
+        case RIGHT:
+            x++;
+            break;
+        case UP:
+            y--;
+            break;
+        case DOWN:
+            y++;
+            break;
+        default:
+            break;
+    }
+
+    // below is the snippet for when head touches the walls, the game is going to end
+
+    if (x > width || x < 0 || y > height || y < 0) {
+        gameOver = true;
+    }
+    if (x == fruitX && y == fruitY) {
+        score += 10;
+        // to randomly allocate the fruit again after being hit by it
+        fruitX = rand() % width;
+        fruitY = rand() % height;
+    }
 }
 
 int main() {
