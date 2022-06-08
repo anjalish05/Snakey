@@ -13,13 +13,15 @@ Use the following keys to change the directions: - <br />
 'w' - UP <br />
 's' - DOWN <br />
 Press 'x' to quit the game <br />
+Every fruit you hit, you gain +10 points. 
 
 ### How to play ?
 
-Download the folder, and type in the following commands in your terminal: -
+Download the folder, and run the following commands in your terminal: -
 ```
 g++ -o Snakey main.cpp 
 ```
 ```
 ./Snakey
 ```
+Enjoy playing :)
