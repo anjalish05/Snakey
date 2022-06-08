@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <conio.h>
 
 using namespace std;
 
@@ -40,6 +41,12 @@ void Draw() {
             if(j == 0) { // first field
                 cout << "#";
             }
+            if(i == y && j == x) {
+                cout << "O";
+            }
+            else if (i == fruitY && j == fruitX) {
+                cout << "F";
+            }
             else {
                 cout << " ";
             }
@@ -54,12 +61,29 @@ void Draw() {
         cout << "#"; // map wall
     }
     cout << endl;
-
-
 }
 
 void Input() {
-
+    // We'll be using two asynchronous functions from the library conio.h
+    // Function to get a character from the console window
+    if(_kbhit()) {
+        // kbhit: is used when a character from the keyboard is pressed 
+        // returns positive number if key is pressed 
+        switch(_getch()) {
+            // getch: returns ASCII value of the character pressed 
+            case 'a':
+                dir = LEFT;
+                break;
+            case 'd':
+                dir = UP;
+                break;
+            case 'w':
+                dir = DOWN;
+                break;
+            case 's':
+                dir = DOWN;
+        }
+    }
 }
 
 void Logic() {
