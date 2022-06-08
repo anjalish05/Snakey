@@ -1,6 +1,6 @@
 # Snakey
 
-A game developed in C++. 
+A Snake game developed in C++. 
 
 ## Game Logic-Rules
 This is a simple snake game. There's a snake head and tail and you get to control the snake head - up, down, left or right.
@@ -14,4 +14,9 @@ Use the following keys for directions: -
 's' - DOWN
 Press 'x' to quit the game 
 
-### Download the folder 
+### How to play ?
+
+Download the folder, and type in the following commands in your terminal: -
+
+g++ -o Snakey main.cpp
+./Snakey
