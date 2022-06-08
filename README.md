@@ -8,11 +8,11 @@ The tail follows. If you eat the fruit, the tail length increases. If the tail i
 If the body or segment of the body or the tail hits the head, the snake dies and the game is over. 
 
 Use the following keys for directions: -
-'a'- LEFT
-'d' - RIGHT
-'w' - UP
-'s' - DOWN
-Press 'x' to quit the game 
+'a'- LEFT <br />
+'d' - RIGHT <br />
+'w' - UP <br />
+'s' - DOWN <br />
+Press 'x' to quit the game <br />
 
 ### How to play ?
 
